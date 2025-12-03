@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus | Desenvolvedor Web & IoT</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark font-sans">
+    <custom-navbar></custom-navbar>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-16 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 z-0"></div>
+            <div class="relative z-10 text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Desenvolvimento Web</span>
+                    <br>
+                    <span class="text-dark">& Soluções IoT</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Conecto o mundo digital ao físico. Crio sites ultrarrápidos e projetos de automação com a precisão da engenharia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Ver Meus Projetos
+                    </a>
+                    <a href="https://wa.me/5547997598910?text=Olá%20Mateus,%20gostaria%20de%20fazer%20um%20orçamento" target="_blank" class="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-secondary">
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-feather="chevron-down" class="text-primary w-8 h-8"></i>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 px-4 md:px-8 lg:px-16 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Mais que código, <span class="text-primary">Engenharia</span>.</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            "Olá, sou o Mateus. Diferente de desenvolvedores comuns, minha base é a Engenharia Elétrica e a Eletrônica. Isso significa que eu não apenas escrevo códigos; eu entendo a lógica profunda de como as coisas funcionam.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Atualmente, concilio a graduação em Engenharia Elétrica na UDESC com o curso técnico em Eletrotécnica no IFSC. Essa dupla jornada ensinou-me disciplina, resolução de problemas complexos e a entregar resultados mesmo sob pressão.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Meu foco é criar interfaces limpas, funcionais e de alta performance, seja para um site comercial ou para o painel de controle de uma máquina."
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
+                            <img src="assets/imagens/perfil.jpeg" alt="Foto do Mateus" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Formação & <span class="text-primary">Autoridade</span></h2>
+                <div class="relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary hidden md:block"></div>
+                    <div class="space-y-12">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-primary">
+                                    <h3 class="text-xl font-bold text-primary">2024 - Presente | UDESC</h3>
+                                    <p class="text-lg font-semibold mt-2">Bacharelado em Engenharia Elétrica</p>
+                                    <p class="text-gray-600 mt-2">Foco: Cálculos complexos, lógica de sistemas e projetos de energia.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block w-6 h-6 rounded-full bg-primary border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                                </div>
+                            <div class="hidden md:block w-6 h-6 rounded-full bg-secondary border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-secondary">
+                                    <h3 class="text-xl font-bold text-secondary">2024 - Presente | IFSC</h3>
+                                    <p class="text-lg font-semibold mt-2">Técnico em Eletrotécnica</p>
+                                    <p class="text-gray-600 mt-2">Foco: Automação, Arduino, ESP32 e circuitos práticos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-primary">
+                                    <h3 class="text-xl font-bold text-primary">2023 | SENAI</h3>
+                                    <p class="text-lg font-semibold mt-2">Desenvolvimento de Sistemas</p>
+                                    <p class="text-gray-600 mt-2">Base sólida em lógica de programação, Banco de Dados e Web.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block w-6 h-6 rounded-full bg-secondary border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 px-4 md:px-8 lg:px-16 bg-white">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Meu <span class="text-primary">Arsenal</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Tecnologias e ferramentas que utilizo para construir soluções rápidas e robustas.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              
+              <div class="skill-card group">
+                <div class="icon-box bg-orange-100 text-orange-600 group-hover:bg-orange-600 group-hover:text-white">
+                  <i data-feather="layout"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">HTML5 & CSS3</h3>
+                <p class="text-gray-600 text-sm">Estrutura semântica e design moderno. Foco em sites leves que carregam instantaneamente.</p>
+              </div>
+
+              <div class="skill-card group">
+                <div class="icon-box bg-yellow-100 text-yellow-600 group-hover:bg-yellow-500 group-hover:text-white">
+                  <i data-feather="code"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">JavaScript</h3>
+                <p class="text-gray-600 text-sm">Interatividade e dinamismo. Criação de elementos que reagem ao usuário sem travar.</p>
+              </div>
+
+              <div class="skill-card group">
+                <div class="icon-box bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white">
+                  <i data-feather="cpu"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Arduino & ESP32</h3>
+                <p class="text-gray-600 text-sm">Automação e Internet das Coisas. Conecto o mundo físico aos sistemas web.</p>
+              </div>
+
+              <div class="skill-card group">
+                <div class="icon-box bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white">
+                  <i data-feather="pen-tool"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">AutoCAD & Projetos</h3>
+                <p class="text-gray-600 text-sm">Precisão de engenharia. Desenho técnico para plantas e esquemas elétricos.</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Vitrine de <span class="text-primary">Projetos</span></h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/imagens/motob.png" alt="Site de Carros" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">HTML5</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">CSS3</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">Responsivo</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Landing Page Automotiva</h3>
+                            <p class="text-gray-600 mb-4">Página de alta conversão focada em vendas locais. Carregamento em menos de 1s.</p>
+                            <a href="https://motob.byethost12.com/?i=3" class="text-primary font-semibold hover:text-primary/80 flex items-center">
+                                Ver Detalhes <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/imagens/igreja ucranina.png" alt="Dashboard Administrativo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold">AJAX</span>
+                                <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold">Dashboard</span>
+                                <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold">Interativo</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Sistema Web Administrativo</h3>
+                            <p class="text-gray-600 mb-4">Interface administrativa fluida com atualizações em tempo real sem recarregar a página.</p>
+                            <a href="https://saonicolau.joinville.br/historia" class="text-secondary font-semibold hover:text-secondary/80 flex items-center">
+                                Ver Detalhes <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-primary to-secondary text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Vamos tirar o seu projeto do papel?</h2>
+                <p class="text-xl mb-12 opacity-90">
+                    Seja para criar o site da sua empresa ou desenvolver uma solução tecnológica, estou pronto para atender.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="https://wa.me/5547997598910?text=Olá%20Mateus,%20gostaria%20de%20um%20orçamento" target="_blank" class="bg-white text-dark p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="message-circle" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">WhatsApp</h3>
+                        <p class="text-gray-600 mb-4">Resposta rápida. Ideal para orçamentos.</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">Chamar Agora</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mateus-zdebski-623335288/" target="_blank" class="bg-white text-dark p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="linkedin" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">LinkedIn</h3>
+                        <p class="text-gray-600 mb-4">Conecte-se profissionalmente.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">Conectar</span>
+                    </a>
+                    <a href="https://github.com/Mateus-Zdebski" target="_blank" class="bg-white text-dark p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="github" class="w-8 h-8 text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">GitHub</h3>
+                        <p class="text-gray-600 mb-4">Veja meu código.</p>
+                        <span class="inline-block bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold">Ver Código</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
